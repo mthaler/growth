@@ -12,3 +12,7 @@ $b$ is the birthrate, $d$ is the deathrate and $(b-d)$ is called intrinsic rate 
 $$
 N(t)=c e^{(b-d) t}
 $$
+
+Here is a plot of expoential growth setting $c=1$ and $(b-d)=1$:
+
+![Expoential growth]("exponential.png")
