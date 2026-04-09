@@ -14,11 +14,12 @@ func main() {
 	b := bounds{
 		xmin: 0,
 		xmax: 5,
-		ymin: -0.5,
-		ymax: 0.5,
+		ymin: 0,
+		ymax: 20,
 	}
 	l := labels{
 		x: "t",
 		y: "growth",
 	}
+	CreateLineplotPlot(points, "t - growth", l, b, "exponential.png")
 }
