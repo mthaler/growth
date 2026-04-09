@@ -1,6 +1,10 @@
 package main
 
-import "gonum.org/v1/plot/plotter"
+import (
+	"math"
+
+	"gonum.org/v1/plot/plotter"
+)
 
 func main() {
 	points := plotter.XYs{}
@@ -22,4 +26,13 @@ func main() {
 		y: "growth",
 	}
 	CreateLineplotPlot(points, "t - growth", l, b, "exponential.png")
+	var points2 plotter.XYs
+	for i := 0; i <= 4000; i++ {
+		t := float64(i) / 10.0
+		deltat := 1 / 100.0
+		points2 = append(points2, plotter.XY{
+			X: t,
+			Y: logistic(points2[i -1].Y, 1, 1, deltat)
+		}
+	}
 }
