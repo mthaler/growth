@@ -30,3 +30,5 @@ where $r$ is the per capital growth rate, $K$ is the carrying capacity. This equ
 $$
 N(t) = \frac{K}{1+(\frac{K-N_0}{N_0}) e^{-r t}}
 $$
+
+where $N_0$ is the initial population size.
