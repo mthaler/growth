@@ -10,5 +10,5 @@ $$
 where $(b-d)$ is called intrinsic rate of natural increase. Solving this we get
 
 $$
-N(t)=c e^{t (b-d)}
+N(t)=c e^{(b-d) t}
 $$
