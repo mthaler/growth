@@ -1,7 +1,7 @@
 package main
 
 import (
-	"math"
+	"fmt"
 
 	"gonum.org/v1/plot/plotter"
 )
@@ -30,9 +30,18 @@ func main() {
 	for i := 0; i <= 4000; i++ {
 		t := float64(i) / 10.0
 		deltat := 1 / 100.0
-		points2 = append(points2, plotter.XY{
-			X: t,
-			Y: logistic(points2[i -1].Y, 1, 1, deltat)
+		if t == 0 {
+			points2 = append(points2, plotter.XY{
+				X: t,
+				Y: 0,
+			})
+		} else {
+			points2 = append(points2, plotter.XY{
+				X: t,
+				Y: logistic(points2[i-1].Y, 10000, 1, deltat),
+			})
 		}
 	}
+	fmt.Printf("+v", points2)
+	CreateLineplotPlot(points2, "t - growth", l, b, "logistic.png")
 }
