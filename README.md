@@ -15,4 +15,4 @@ $$
 
 Here is a plot of expoential growth setting $c=1$ and $(b-d)=1$:
 
-![Expoential growth]("exponential.png")
+![Expoential growth](exponential.png)
