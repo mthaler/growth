@@ -7,6 +7,6 @@ func exponential(c, b, d, t float64) float64 {
 }
 
 func logistic(nprev, r, k, deltat float64) float64 {
-	n := deltat * r * nprev * (1 - nprev/k)
+	n := nprev + deltat*r*nprev*(1-nprev/k)
 	return n
 }
