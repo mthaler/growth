@@ -17,4 +17,8 @@ func main() {
 		ymin: -0.5,
 		ymax: 0.5,
 	}
+	l := labels{
+		x: "t",
+		y: "growth",
+	}
 }
