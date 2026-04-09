@@ -19,4 +19,10 @@ Here is a plot of expoential growth setting $c=1$ and $(b-d)=1$:
 
 This cannot be correct, resources, for example food, are limited and at some point growth has to slow down.
 
-A more realistic model is logistic growth.
+A more realistic model is logistic growth;
+
+$$
+ \frac{dN}{dt}=rN(1-N/K)
+$$
+
+where $r$ is the per capita growth rate, $K$ is the carrying capacity. We solve this diffential equation using [Euler's method](https://en.wikipedia.org/wiki/Euler_method).
