@@ -1,5 +1,7 @@
 package main
 
-func exponential() float64 {
-	return 0.0
+import "math"
+
+func exponential(c, b, d, t float64) float64 {
+	return c * math.Exp((b-d)*t)
 }
