@@ -26,10 +26,10 @@ func main() {
 	CreateLineplotPlot(points, "t - growth", l, b, "exponential.png")
 	var points2 plotter.XYs
 	for i := 0; i <= 4000; i++ {
-		t := float64(i) / 100.0
+		t := float64(i) / 1000.0
 		points2 = append(points2, plotter.XY{
 			X: t,
-			Y: logistic(1, 1, 1000, t),
+			Y: logistic(3, 10000, 1000, t),
 		})
 	}
 	CreateLineplotPlot(points2, "t - growth", l, b, "logistic.png")
