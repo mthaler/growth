@@ -34,3 +34,5 @@ $$
 where $N_0$ is the initial population size.
 
 ![Logistic growth](logistic.png)
+
+This is more realistic because at some point the growth slows down.
