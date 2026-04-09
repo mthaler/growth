@@ -1,2 +1,2 @@
-# logisticgrowth
-Logistic growth code in Go
+# growth
+Growth code in Go
