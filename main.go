@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"gonum.org/v1/plot/plotter"
 )
 
@@ -42,6 +40,5 @@ func main() {
 			})
 		}
 	}
-	fmt.Printf("+v", points2)
 	CreateLineplotPlot(points2, "t - growth", l, b, "logistic.png")
 }
