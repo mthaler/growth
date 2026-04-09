@@ -5,3 +5,8 @@ import "math"
 func exponential(c, b, d, t float64) float64 {
 	return c * math.Exp((b-d)*t)
 }
+
+func logistic() float64 {
+	//rN(1-N/K)
+	return 0.0
+}
