@@ -25,4 +25,8 @@ $$
  \frac{dN}{dt}=rN(1-N/K)
 $$
 
-where $r$ is the per capita growth rate, $K$ is the carrying capacity. We solve this diffential equation using [Euler's method](https://en.wikipedia.org/wiki/Euler_method).
+where $r$ is the per capital growth rate, $K$ is the carrying capacity. This equation can be explicity solved. We get:
+
+$$
+N(t) = \frac{K}{1+(\frac{K-N_0}{N_0}) e^{-r t}}
+$$
